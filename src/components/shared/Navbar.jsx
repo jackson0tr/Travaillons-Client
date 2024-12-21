@@ -10,7 +10,7 @@ import { USER_API_END_POINT } from '@/utils/constant'
 import { setUser } from '@/redux/authSlice'
 import { toast } from 'sonner'
 import logo from '../../assets/logo.png'
-import { motion } from 'framer-motion' 
+import { motion } from 'framer-motion'
 
 const Navbar = () => {
     const { user } = useSelector(store => store.auth);
@@ -188,6 +188,16 @@ const Navbar = () => {
                                                     <h4 className='font-medium'>{user?.fullname}</h4>
                                                     <p className='text-sm text-muted-foreground'>{user?.profile?.bio}</p>
                                                 </div>
+                                            </div>
+                                            <div className='flex flex-col my-2 text-gray-600'>
+                                                {
+                                                    user && user.role === 'student' && (
+                                                        <div className='flex w-fit items-center gap-2 cursor-pointer'>
+                                                            <User2 />
+                                                            <Button variant="link"> <Link to="/profile">Voir le profil</Link></Button>
+                                                        </div>
+                                                    )
+                                                }
                                             </div>
                                             <div className='flex flex-col my-2 text-gray-600'>
                                                 <div className='flex w-fit items-center gap-2 cursor-pointer'>
