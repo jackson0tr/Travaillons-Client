@@ -124,14 +124,14 @@ const Navbar = () => {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.1 }}
                                 >
-                                    <Link to="/admin/companies" className="hover:text-[#004aad]">Companies</Link>
+                                    <Link to="/admin/companies" className="hover:text-[#004aad]">Entreprises</Link>
                                 </motion.div>
                                 <motion.div
                                     initial={{ opacity: 0, y: -20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.3 }}
                                 >
-                                    <Link to="/admin/jobs" className="hover:text-[#004aad]">Jobs</Link>
+                                    <Link to="/admin/jobs" className="hover:text-[#004aad]">Emplois</Link>
                                 </motion.div>
                             </>
                         ) : (
@@ -141,21 +141,21 @@ const Navbar = () => {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.1 }}
                                 >
-                                    <Link to="/" className="hover:text-[#004aad]">Home</Link>
+                                    <Link to="/" className="hover:text-[#004aad]">Accueil</Link>
                                 </motion.div>
                                 <motion.div
                                     initial={{ opacity: 0, y: -20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.3 }}
                                 >
-                                    <Link to="/jobs" className="hover:text-[#004aad]">Jobs</Link>
+                                    <Link to="/jobs" className="hover:text-[#004aad]">Emplois</Link>
                                 </motion.div>
                                 <motion.div
                                     initial={{ opacity: 0, y: -20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.5 }}
                                 >
-                                    <Link to="/browse" className="hover:text-[#004aad]">Browse</Link>
+                                    <Link to="/browse" className="hover:text-[#004aad]">Parcourir</Link>
                                 </motion.div>
                             </>
                         )
@@ -168,8 +168,8 @@ const Navbar = () => {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.7 }}
                                     className='flex flex-col items-center'>
-                                    <Link to="/login"><Button className="hover:bg-[#005aad] hover:text-[#fff]" variant="outline">Login</Button></Link>
-                                    <Link className='pt-4' to="/signup"><Button className="bg-[#004aad] hover:bg-[#005aad]">Signup</Button></Link>
+                                    <Link to="/login"><Button className="hover:bg-[#005aad] hover:text-[#fff]" variant="outline">Connexion</Button></Link>
+                                    <Link className='pt-4' to="/signup"><Button className="bg-[#004aad] hover:bg-[#005aad]">Inscription</Button></Link>
                                 </motion.div>
                             ) : (
                                 <Popover>
@@ -192,7 +192,7 @@ const Navbar = () => {
                                             <div className='flex flex-col my-2 text-gray-600'>
                                                 <div className='flex w-fit items-center gap-2 cursor-pointer'>
                                                     <LogOut />
-                                                    <Button onClick={logoutHandler} variant="link">Logout</Button>
+                                                    <Button onClick={logoutHandler} variant="link">Déconnexion</Button>
                                                 </div>
                                             </div>
                                         </div>
